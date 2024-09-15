@@ -25,10 +25,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Theme accentColor={ 'gray' } appearance={ 'dark' }>
-                    <Container size={ '4' }>
-                        {children}
-                    </Container>
                     <NavigationBar />
+                    <Container size={ '4' }>
+                        { children }
+                    </Container>
                 </Theme>
             </body>
         </html>

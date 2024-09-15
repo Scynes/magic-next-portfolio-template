@@ -4,7 +4,7 @@ import { ScrollIndicator } from './scroll-indicator';
 
 export const Hero = () => {
     return (
-        <Flex direction={ 'column' } position={ 'relative' }>
+        <Flex direction={ 'column' }>
             <ScrollIndicator />
             <TextRevealByWord text={ "Welcome to my portfolio." } />
         </Flex>
