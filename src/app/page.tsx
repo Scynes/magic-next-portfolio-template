@@ -1,5 +1,9 @@
+import { Hero } from '@/components/core/hero';
+
 export default function Page() {
     return (
-        <h1>Hello</h1>
+        <>
+            <Hero />
+        </>
     );
 }
