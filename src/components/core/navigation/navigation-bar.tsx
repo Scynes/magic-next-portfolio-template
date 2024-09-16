@@ -6,8 +6,8 @@ import { NavigationLink } from './navigation-link';
 
 export const NavigationBar = () => {
     return (
-        <Flex className={ 'z-50 bottom-0 fixed w-full' }>
-            <Dock direction={ 'middle' } className={ 'rounded-full bg-[--color-panel] !gap-0 mb-8' }>
+        <Flex className={ 'z-50 bottom-0 fixed w-full pointer-events-none' }>
+            <Dock direction={ 'middle' } className={ 'rounded-full bg-[--color-panel] !gap-0 mb-8 pointer-events-auto' }>
                 <DockIcon>
                     <NavigationLink href={ '/' } label={ 'Home' }>
                         <FaHouse size={ '1.10rem' } />
