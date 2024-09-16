@@ -1,6 +1,7 @@
 import { Flex, Heading, Link, Text } from '@radix-ui/themes';
 import { AboutHeading } from './about-heading';
 import AnimatedShinyText from '@/components/magicui/animated-shiny-text';
+import { Technology } from './technology';
 
 export const About = () => {
     return (
@@ -12,6 +13,7 @@ export const About = () => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod delectus eveniet cumque nesciunt, odit non, <Link href={ '/' }>quasi quam laboriosam sint voluptatum beatae</Link> dicta labore eos voluptates. Dignissimos quam nesciunt ad culpa <Link href={ '/' }>repellat praesentium explicabo nihil</Link>. Libero aut provident quos voluptates incidunt.
                 </AnimatedShinyText>
             </Flex>
+            <Technology />
         </Flex>
     );
 }
