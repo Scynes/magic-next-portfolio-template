@@ -1,0 +1,1 @@
+export type Technology = 'React' | 'Next.js' | 'Tailwind' | 'HTML' | 'CSS' | 'TypeScript' | 'JavaScript' | 'MongoDB' | 'PostgreSQL';
