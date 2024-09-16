@@ -1,4 +1,5 @@
 import { About } from '@/components/core/about/about';
+import { Technology } from '@/components/core/about/technology';
 import { Education } from '@/components/core/education/education';
 import ExpandableContent from '@/components/core/expandable-content';
 import { Hero } from '@/components/core/hero/hero';
@@ -13,6 +14,7 @@ export default function Page() {
             <About />
             <Work />
             <Education />
+            <Technology />
             <References />
         </Flex>
     );
