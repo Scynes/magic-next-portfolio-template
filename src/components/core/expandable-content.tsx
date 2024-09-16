@@ -13,7 +13,7 @@ export default function ExpandableContent({ experience }: { experience: Experien
     const toggleExpand = () => setIsExpanded(!isExpanded);
 
     return (
-        <Flex className={ 'w-full cursor-pointer' } onClick={ toggleExpand } gap={ '3' }>
+        <Flex className={ `transition-all w-full cursor-pointer rounded-xl p-2 ${ isExpanded && 'shadow-md shadow-[--gray-3]' }` } onClick={ toggleExpand } gap={ '3' }>
             <Avatar src={ experience.logoUrl } radius={ 'full' } fallback={ experience.company.substring(0, 1) } size={ '4' }/>
             <Flex direction={ 'column' } className={ 'w-full' }>
                 <Flex justify={ 'between' }>
