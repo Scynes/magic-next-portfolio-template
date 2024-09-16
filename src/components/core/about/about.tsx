@@ -6,7 +6,7 @@ import BoxReveal from '@/components/magicui/box-reveal';
 
 export const About = () => {
     return (
-        <Flex className={ 'min-h-dvh' } direction={ 'column' } gap={ '8' }>
+        <Flex className={ '' } direction={ 'column' } gap={ '8' }>
             <AboutHeading />
             <Flex direction={ 'column' } gap={ '3' }>
                 <BoxReveal boxColor={ 'black' }>
@@ -18,7 +18,7 @@ export const About = () => {
                     </AnimatedShinyText>
                 </BoxReveal>
             </Flex>
-            <Technology />
+            { /* <Technology /> */ }
         </Flex>
     );
 }
