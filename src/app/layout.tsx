@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Theme accentColor={ 'gray' } appearance={ 'light' }>
                     <NavigationBar />
-                    <Container size={ '2' }>
+                    <Container size={ '2' } className={ 'p-3 sm:p-0' }>
                         { children }
                     </Container>
                 </Theme>
