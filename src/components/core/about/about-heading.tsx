@@ -10,7 +10,7 @@ export const AboutHeading = () => {
                     <HyperText text={ "Hi! I'm Dustin." } />
                 </Heading>
                 <Heading size={{ initial: '5', sm: '7' }} className={ 'overflow-hidden' }>
-                    <VelocityScroll text={ 'Full Stack Engineer | Frontend Expert | Master CS | Gamer | Skateboarder | Hackathon Winner |' } default_velocity={ 2 } />
+                    <VelocityScroll text={ 'Full Stack Engineer | Pianist | Tinkerer | Front End Focused | Gamer | Skateboarder | Hackathon Winner | Gym Bro |' } default_velocity={ 2 } />
                 </Heading>
             </Flex>
         </Flex>
