@@ -1,5 +1,6 @@
 import { About } from '@/components/core/about/about';
 import { Technology } from '@/components/core/about/technology';
+import { Contact } from '@/components/core/contact/contact';
 import { Education } from '@/components/core/education/education';
 import { Hero } from '@/components/core/hero/hero';
 import { Projects } from '@/components/core/projects/projects';
@@ -17,6 +18,7 @@ export default function Page() {
             <Technology />
             <Projects />
             <References />
+            <Contact />
         </Flex>
     );
 }

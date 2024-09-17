@@ -1,8 +1,7 @@
 import Marquee from '@/components/magicui/marquee';
 import { REFERENCES } from '@/constants/references';
-import { Box, Flex, Text } from '@radix-ui/themes';
+import { Box, Flex } from '@radix-ui/themes';
 import { ReferenceCard } from './reference-card';
-import { SectionHeading } from '../section-heading';
 import SparklesText from '@/components/magicui/sparkles-text';
 import HyperText from '@/components/magicui/hyper-text';
 import BlurFade from '@/components/magicui/blur-fade';
