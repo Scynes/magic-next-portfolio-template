@@ -7,9 +7,9 @@ import "./globals.css";
 import { GridBackground } from '@/components/core/grid-background';
 import { ThemeProvider } from 'next-themes';
 
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
+const suse = localFont({
+    src: "./fonts/SUSE.ttf",
+    variable: "--font-suse",
     weight: "100 900",
 });
 const geistMono = localFont({
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body className={`${suse.variable} ${geistMono.variable} antialiased`}>
                 <ThemeProvider attribute='class'>
                     <Theme accentColor={ 'gray' }>
                         <GridBackground />
