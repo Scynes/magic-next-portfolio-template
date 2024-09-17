@@ -9,7 +9,7 @@ import BlurFade from '@/components/magicui/blur-fade';
 export const References = () => {
 
     return (
-        <Flex direction={ 'column' } gap={ '5' }>
+        <Flex direction={ 'column' } gap={ '5' } className={ 'min-h-dvh' } align={ 'center' } justify={ 'center' }>
             <Flex direction={ 'column' } align={ 'center' } justify={ 'center' }>
                 <BlurFade delay={ 0.2 * 1 } inView>
                     <HyperText text={ "Don't just take my word for it." } className={ 'underline font-bold' } />

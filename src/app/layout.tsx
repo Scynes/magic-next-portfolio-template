@@ -5,6 +5,7 @@ import { NavigationBar } from '@/components/core/navigation/navigation-bar';
 
 import "./globals.css";
 import { GridBackground } from '@/components/core/grid-background';
+import { ThemeProvider } from 'next-themes';
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -26,13 +27,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <Theme accentColor={ 'gray' } appearance={ 'dark' }>
-                    <GridBackground />
-                    <NavigationBar />
-                    <Container size={ '2' } className={ 'p-3 sm:p-0' }>
-                        { children }
-                    </Container>
-                </Theme>
+                <ThemeProvider attribute='class'>
+                    <Theme accentColor={ 'gray' }>
+                        <GridBackground />
+                        <NavigationBar />
+                        <Container size={ '2' } className={ 'p-3 sm:p-0' }>
+                            { children }
+                        </Container>
+                    </Theme>
+                </ThemeProvider>
             </body>
         </html>
     );

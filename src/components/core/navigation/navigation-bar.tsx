@@ -1,10 +1,16 @@
+'use client';
+
 import { Dock, DockIcon } from '@/components/magicui/dock';
-import { Flex, Separator } from '@radix-ui/themes';
+import { Button, Flex, IconButton, Separator, Tooltip } from '@radix-ui/themes';
 import { FaHouse, FaFolderOpen, FaGithub, FaLinkedin, FaNewspaper } from "react-icons/fa6";
-import { IoSunny } from "react-icons/io5";
+import { IoSunny, IoMoon } from "react-icons/io5";
 import { NavigationLink } from './navigation-link';
+import { useTheme } from 'next-themes';
 
 export const NavigationBar = () => {
+
+    const { theme, setTheme } = useTheme();
+
     return (
         <Flex className={ 'z-50 bottom-0 fixed w-full pointer-events-none' }>
             <Dock direction={ 'middle' } className={ 'rounded-full bg-[--color-panel] !gap-0 mb-8 pointer-events-auto' }>
@@ -36,9 +42,11 @@ export const NavigationBar = () => {
                 </DockIcon>
                 <Separator orientation={ 'vertical' } size={ '4' } />
                 <DockIcon>
-                    <NavigationLink href={ '/' } label={ 'Dark Mode' }>
-                        <IoSunny size={ '1.10rem' } />
-                    </NavigationLink>
+                    <Tooltip content={ 'Appearance' }>
+                        <IconButton color={ 'gray' } onClick={ () => setTheme(theme === 'light' ? 'dark' : 'light') } radius={ 'full' }>
+                            { theme === 'light' ? <IoSunny size={ '1.10rem' } /> : <IoMoon size={ '1.10rem' } /> }
+                        </IconButton>
+                    </Tooltip>
                 </DockIcon>
             </Dock>
         </Flex>
