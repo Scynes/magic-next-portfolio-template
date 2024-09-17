@@ -4,6 +4,7 @@ import { Container, Theme } from '@radix-ui/themes';
 import { NavigationBar } from '@/components/core/navigation/navigation-bar';
 
 import "./globals.css";
+import { GridBackground } from '@/components/core/grid-background';
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Theme accentColor={ 'gray' } appearance={ 'light' }>
+                    <GridBackground />
                     <NavigationBar />
                     <Container size={ '2' } className={ 'p-3 sm:p-0' }>
                         { children }
