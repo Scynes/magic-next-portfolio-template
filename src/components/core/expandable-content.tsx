@@ -24,13 +24,17 @@ export default function ExpandableContent({ experience }: { experience: Experien
                             </Text>
                             <FaChevronRight size={ '1rem' } className={`transform transition-transform duration-300 ${ isExpanded ? "rotate-90" : "" }`} />
                         </Flex>
-                        <Text size={ '1' }>Hello</Text>
+                        <Text size={ '1' }>
+                            { experience.role }
+                        </Text>
                     </Flex>
-                    <Text size={ '2' } className={ 'text-gray-500' }>May 2022 - Oct 2023</Text>
+                    <Text size={ '1' } className={ 'text-gray-500' }>
+                        { `${ experience.startDate } - ${ experience.endDate }` }
+                    </Text>
                 </Flex>
                 <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: isExpanded ? 1 : 0, height: isExpanded ? 'auto' : 0 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} className={ 'overflow-hidden' }>
                     <Box className={ 'pt-4' }>
-                        <Text>
+                        <Text className={ 'text-gray-500' }>
                             { experience.description }
                         </Text>
                     </Box>

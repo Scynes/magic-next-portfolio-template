@@ -10,9 +10,9 @@ export const Education = () => {
         <Flex direction={ 'column' } gap={ '5' }>
             <SectionHeading title={ 'Education' } />
             <Flex direction={ 'column' } className={ 'w-full' } gap={ '4' }>
-                { EDUCATION.map((work, index) => (
+                { EDUCATION.map((experience, index) => (
                     <BlurFade key={ index } delay={ 0.25 * index } inView>
-                        <ExpandableContent experience={ work } />
+                        <ExpandableContent experience={ experience } />
                     </BlurFade>
                 )) }
             </Flex>
