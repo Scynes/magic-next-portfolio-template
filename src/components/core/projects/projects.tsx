@@ -1,6 +1,5 @@
 import { Flex } from '@radix-ui/themes';
 import { SectionHeading } from '../section-heading';
-import BlurFade from '@/components/magicui/blur-fade';
 import { PROJECTS } from '@/constants/projects';
 import { ProjectCard } from './project-card';
 

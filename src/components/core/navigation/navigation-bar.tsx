@@ -1,7 +1,7 @@
 'use client';
 
 import { Dock, DockIcon } from '@/components/magicui/dock';
-import { Button, Flex, IconButton, Separator, Tooltip } from '@radix-ui/themes';
+import { Flex, IconButton, Separator, Tooltip } from '@radix-ui/themes';
 import { FaHouse, FaFolderOpen, FaGithub, FaLinkedin, FaNewspaper } from "react-icons/fa6";
 import { IoSunny, IoMoon } from "react-icons/io5";
 import { NavigationLink } from './navigation-link';

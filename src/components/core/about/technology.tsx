@@ -1,9 +1,7 @@
 import BlurFade from '@/components/magicui/blur-fade';
-import BoxReveal from '@/components/magicui/box-reveal';
-import HyperText from '@/components/magicui/hyper-text';
 import IconCloud from '@/components/magicui/icon-cloud';
 import { TECHNOLOGIES } from '@/constants/technologies';
-import { Badge, Flex, Heading } from '@radix-ui/themes';
+import { Badge, Flex } from '@radix-ui/themes';
 import { SectionHeading } from '../section-heading';
 
 export const Technology = () => {
