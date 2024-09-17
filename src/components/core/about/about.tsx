@@ -3,10 +3,12 @@ import { AboutHeading } from './about-heading';
 import AnimatedShinyText from '@/components/magicui/animated-shiny-text';
 import BoxReveal from '@/components/magicui/box-reveal';
 import { SectionHeading } from '../section-heading';
+import { Selfie } from './selfie';
 
 export const About = () => {
     return (
-        <Flex className={ '' } direction={ 'column' } gap={ '8' }>
+        <Flex direction={ 'column' } gap={ '8' }>
+            <Selfie />
             <AboutHeading />
             <Flex direction={ 'column' } gap={ '3' }>
                 <SectionHeading title={ 'About Me' } />
