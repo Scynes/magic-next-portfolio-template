@@ -234,6 +234,10 @@ body {
     animation-delay: 0.4s;
 }
 
+.radix-themes {
+    --default-font-family: var(--font-geist-sans);
+}
+
 @keyframes animate {
 	0% {
 		opacity: 0;
