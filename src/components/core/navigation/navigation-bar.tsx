@@ -31,12 +31,12 @@ export const NavigationBar = () => {
                 </DockIcon>
                 <Separator orientation={ 'vertical' } size={ '4' } />
                 <DockIcon>
-                    <NavigationLink href={ '/' } label={ 'GitHub' }>
+                    <NavigationLink href={ 'https://github.com/elliesolhjou' } label={ 'GitHub' }>
                         <FaGithub size={ '1.10rem' } />
                     </NavigationLink>
                 </DockIcon>
                 <DockIcon>
-                    <NavigationLink href={ '/' } label={ 'LinkedIn' }>
+                    <NavigationLink href={ 'https://www.linkedin.com/in/elliesolhjou/' } label={ 'LinkedIn' }>
                         <FaLinkedin size={ '1.10rem' } />
                     </NavigationLink>
                 </DockIcon>

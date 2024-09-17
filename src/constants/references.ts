@@ -38,7 +38,7 @@ export const REFERENCES: Reference[] = [
         description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
-        name: 'Natalie Portman',
+        name: 'Pouya Sharifi',
         description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
 ]

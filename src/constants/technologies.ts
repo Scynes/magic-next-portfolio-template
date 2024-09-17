@@ -16,10 +16,6 @@ export const TECHNOLOGIES = [
         simpleIcon: 'tailwindcss',
     },
     {
-        title: 'Supabase',
-        simpleIcon: 'supabase',
-    },
-    {
         title: 'HTML5',
         simpleIcon: 'html5',
     },
@@ -51,10 +47,7 @@ export const TECHNOLOGIES = [
         title: 'GitHub',
         simpleIcon: 'github',
     },
-    {
-        title: 'Svelte',
-        simpleIcon: 'svelte',
-    },
+
     {
         title: 'Python',
         simpleIcon: 'python',
