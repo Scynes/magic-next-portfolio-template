@@ -24,7 +24,7 @@ export default function ExpandableContent({ experience }: { experience: Experien
                             </Text>
                             <FaChevronRight size={ '1rem' } className={`transform transition-transform duration-300 ${ isExpanded ? "rotate-90" : "" }`} />
                         </Flex>
-                        <Text size={ '1' }>Hello</Text>
+                        <Text size={ '1' }>Master of Science</Text>
                     </Flex>
                     <Text size={ '2' } className={ 'text-gray-500' }>May 2022 - Oct 2023</Text>
                 </Flex>
