@@ -1,5 +1,6 @@
 import { About } from '@/components/core/about/about';
 import { Technology } from '@/components/core/about/technology';
+import { BentoImages } from '@/components/core/bento/bento-images';
 import { Education } from '@/components/core/education/education';
 import { Hero } from '@/components/core/hero/hero';
 import { Projects } from '@/components/core/projects/projects';
@@ -12,6 +13,7 @@ export default function Page() {
         <Flex direction={ 'column' } className={ 'relative' } gap={ '8' }>
             <Hero />
             <About />
+            <BentoImages />
             <Work />
             <Education />
             <Technology />
