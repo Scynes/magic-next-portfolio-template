@@ -12,7 +12,7 @@ export const BentoImages = () => {
     ]
 
     return (
-        <Grid className={ 'grid grid-cols-1 sm:grid-cols-5 gap-4' }>
+        <Grid className={ 'grid grid-cols-2 sm:grid-cols-5 gap-4' }>
             { images.map((image, index) => (
                 <Flex key={ index } className={`relative overflow-hidden max-h-[300px] rounded-lg ${ image.span.col > 1 ? `sm:col-span-${ image.span.col }` : ''} ${ image.span.row > 1 ? `sm:row-span-${ image.span.row }` : '' }`}>
                     <BlurFade className={ 'h-full w-full' } yOffset={ 0 } delay={ 0.15 * index } inView>
