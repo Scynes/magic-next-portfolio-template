@@ -1,5 +1,5 @@
 import BlurFade from '@/components/magicui/blur-fade'
-import { Flex, Grid } from '@radix-ui/themes'
+import { Grid } from '@radix-ui/themes'
 import Image from 'next/image'
 
 export const BentoImages = () => {
